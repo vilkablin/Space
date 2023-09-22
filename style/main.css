@@ -13,6 +13,7 @@ body{
 }
 .container{
   width: 100%;
+  margin: 0 auto;
   max-width: 1920px;
 }
 .w-100{
@@ -103,7 +104,7 @@ background-color: #A9C2CB;
   gap:30px;
 }
 .intro__offer p{
-  font-size: calc(var(--index)*0.7);
+  font-size: calc(var(--index)*0.85);
   font-weight: 400;
   color:#020305;
   text-align:justify;
@@ -159,7 +160,7 @@ background-color: #A9C2CB;
   width: 30%;
   height: 20%;
   position: absolute;
-  bottom:-14%;
+  bottom:-12%;
  right: 14vw;
 }
 .logotypes{
@@ -168,6 +169,9 @@ background-color: #A9C2CB;
   align-items: center;
   height: 40vh;
   gap:60px;
+}
+.logotype{
+  max-width: 15vw;
 }
 .join{
   display: flex;
@@ -301,13 +305,17 @@ input{
   height: 8vh;
   border-radius: 20px;
   padding:10px 20px;
+  font-size: calc(var(--index)*0.8);
 }
 .subscribe__btn{
+  font-size: calc(var(--index)*0.8);
   background: #A9C2CB;
   border-radius: 20px;
 color:#fff;
 height: 8vh;
-padding:3.2% 20px;
+display: flex;
+justify-content: center;
+align-items: center;
 width: 30%;
 text-align: center;
 transition: .3s;
@@ -324,9 +332,15 @@ transform: scale(1.1);
 }
 .footer__nav{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   width: 100%;
+}
+.footer__nav__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: calc(var(--index)*6);
 }
 .polit{
   display: flex;
@@ -335,12 +349,47 @@ transform: scale(1.1);
 color:#020305;
 font-size: calc(var(--index)*0.7);
 font-weight: 600;
+gap:20px;
 }
 
-@media screen and (max-width: 998px) {
-    
+@media screen and (max-width: 1024px) {
+  .py-40{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .px-100{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+   .exercisng img{
+    top:38%;
+    right:2vw;
+    width: 28%;
+   }
+   .spacewalks img{
+    bottom:18%;
+    right:20vw;
+    width: 28%;
+   }
+.total_time img{
+  width: 35%;
+  height: 20%;
+  bottom:0%;
+ right: 14vw;
 }
-
+.logotypes{
+  height: 30vh;
+}
+.resources{
+  height: 90vh;
+}
+.cards{
+  bottom:10%;
+}
+}
+.join_community{
+  height: 35vh;
+}
 
 @media screen and (max-width: 576px) {
   
